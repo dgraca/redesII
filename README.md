@@ -1,17 +1,19 @@
+
 # Redes II
 
-## Repositório para armazenar os documentos/trabalhos relativos à cadeira de Redes II
+## Repositório para armazenar documentos de uma forma centralizada
 
-- Trabalhos Praticos
-- Enunciados
-- Eventuais ficheiros não listados
+### Documentos que podem ser encontrados neste repositório
+-  Trabalhos práticos
+-  Enunciados dos trabalhos práticos
+-  Livros/Manuais ou outros recursos dados pelos professores
+- Projetos elaborados no GNS3 v2.2.15
+- Outros documentos que possam ser pertinentes
 
+### Grupo e respetivos elementos
+-   Daniel Graça, n.º 20948
+-   Guilherme Lourenço, n.º23053
 
-Grupo 9, constituído por:
-* Daniel Graça, n.º 20948 
-* Guilherme Lourenço, n.º23053
-
-
-
-Instituto Politécnico de Tomar
-Ano Letivo 2021/2022
+### Instituição e ano letivo
+- Instituto Politécnico de Tomar
+- Ano Letivo 2021/2022
