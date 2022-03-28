@@ -1,0 +1,46 @@
+Mar 27 15:43:11.519 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 27 15:43:11.520 HYPERVISOR: Started on IP = localhost, TCP port = 57817.
+Mar 27 15:43:11.577 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 27 15:43:11.577 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips 
+Mar 27 15:43:11.580 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips
+Mar 27 15:43:11.580 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips\2b8bc4d7-49d8-4038-a07b-c1ce5f2b9dbc 
+Mar 27 15:43:11.580 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips\2b8bc4d7-49d8-4038-a07b-c1ce5f2b9dbc
+Mar 27 15:43:11.581 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+Mar 27 15:43:11.583 VM: VM R1 created.
+Mar 27 15:43:11.583 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5008 
+Mar 27 15:43:11.583 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+Mar 27 15:43:11.584 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Mar 27 15:43:11.584 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Mar 27 15:43:11.584 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 27 15:43:11.584 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60a48cb8 
+Mar 27 15:43:11.586 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Mar 27 15:43:11.586 HYPERVISOR: exec_cmd: c2691 set_mac_addr R1 c001.1580.0000 
+Mar 27 15:43:11.586 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Mar 27 15:43:11.587 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Mar 27 15:43:12.165 HYPERVISOR: exec_cmd: nio create_udp udp-a246831f-475f-4f95-9b32-e5a69d66af90 20002 127.0.0.1 20003 
+Mar 27 15:43:12.417 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-a246831f-475f-4f95-9b32-e5a69d66af90 
+Mar 27 15:43:12.418 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 27 15:43:12.455 HYPERVISOR: exec_cmd: nio create_udp udp-dfd2f618-e594-46d8-88de-0de0846f2b94 20006 127.0.0.1 20007 
+Mar 27 15:43:12.457 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-dfd2f618-e594-46d8-88de-0de0846f2b94 
+Mar 27 15:43:12.457 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 27 15:43:16.126 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Mar 27 15:43:16.127 VM: VM Ghost created.
+Mar 27 15:43:16.128 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Mar 27 15:43:16.129 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Mar 27 15:43:16.129 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Mar 27 15:43:16.130 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Mar 27 15:43:16.130 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 27 15:43:16.147 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Mar 27 15:43:16.147 HYPERVISOR: exec_cmd: vm start Ghost 
+Mar 27 15:43:16.537 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Mar 27 15:43:16.537 HYPERVISOR: exec_cmd: vm stop Ghost 
+Mar 27 15:43:16.705 VM: VM Ghost shutdown.
+Mar 27 15:43:16.737 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Mar 27 15:43:16.739 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Mar 27 15:43:16.739 VM: VM Ghost destroyed.
+Mar 27 15:43:16.748 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Mar 27 15:43:16.748 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\cenarioB\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Mar 27 15:43:16.749 HYPERVISOR: exec_cmd: vm get_status R1 
+Mar 27 15:43:16.750 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Mar 27 15:43:16.750 HYPERVISOR: exec_cmd: vm start R1 
+Mar 27 15:44:33.063 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
