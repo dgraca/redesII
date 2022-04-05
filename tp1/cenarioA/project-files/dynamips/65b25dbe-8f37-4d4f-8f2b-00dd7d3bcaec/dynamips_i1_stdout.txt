@@ -1,7 +1,3 @@
-cygwin warning:
-  MS-DOS style path detected: C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\project-files\dynamips
-  Preferred POSIX equivalent is: /cygdrive/c/Users/danie/OneDrive/Ambiente de Trabalho/Daniel/2ano_2semestre/RedesII/Praticas/tp1/project-files/dynamips
-  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
-  Consult the user's guide for more details about POSIX paths:
-    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
-C2691 'Ghost': generic_nvram_extract_config: Unknown error -61605
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffb949228658e645d373d5d690403c1bbbc0a5fcd1f674272400a29863a30bd4
+size 582

@@ -1,2 +1,3 @@
-set pcname PC
-ip 192.168.9.100 192.168.9.1 25
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ad964ea488a43e8fd60310e4c2b4f134c324b9e6eeb24112850fa01121a8016
+size 46
