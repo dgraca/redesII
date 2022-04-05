@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b538ef77f3c465f9eb795d3beeccccb263ae4fc20551b7f2c40b0aa303a66ebe
-size 2840
+Mar 12 14:00:42.659 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Mar 12 14:00:42.660 HYPERVISOR: Started on IP = localhost, TCP port = 53301.
+Mar 12 14:00:43.156 HYPERVISOR: exec_cmd: hypervisor version 
+Mar 12 14:00:43.156 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\project-files\dynamips 
+Mar 12 14:00:43.156 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\project-files\dynamips
+Mar 12 14:00:43.157 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\project-files\dynamips\0cbd3d6d-b759-4781-951f-4fef9b204c57 
+Mar 12 14:00:43.157 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp1\project-files\dynamips\0cbd3d6d-b759-4781-951f-4fef9b204c57
+Mar 12 14:00:43.160 HYPERVISOR: exec_cmd: vm create RouterB 2 c2691 
+Mar 12 14:00:43.162 VM: VM RouterB created.
+Mar 12 14:00:43.162 HYPERVISOR: exec_cmd: vm set_con_tcp_port RouterB 5001 
+Mar 12 14:00:43.162 HYPERVISOR: exec_cmd: c2691 get_mac_addr RouterB 
+Mar 12 14:00:43.163 HYPERVISOR: exec_cmd: vm set_disk0 RouterB 0 
+Mar 12 14:00:43.163 HYPERVISOR: exec_cmd: vm set_exec_area RouterB 64 
+Mar 12 14:00:43.164 HYPERVISOR: exec_cmd: vm get_status RouterB 
+Mar 12 14:00:43.164 HYPERVISOR: exec_cmd: vm set_idle_pc RouterB 0x60a48cb8 
+Mar 12 14:00:43.165 HYPERVISOR: exec_cmd: vm set_ios RouterB C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Mar 12 14:00:43.165 HYPERVISOR: exec_cmd: c2691 set_mac_addr RouterB c002.29e4.0000 
+Mar 12 14:00:43.166 HYPERVISOR: exec_cmd: vm set_nvram RouterB 256 
+Mar 12 14:00:43.168 HYPERVISOR: exec_cmd: vm set_ram RouterB 192 
+Mar 12 14:00:44.195 HYPERVISOR: exec_cmd: nio create_udp udp-1fb881d5-b79f-4e4d-a321-1c2601b8a50f 2006 127.0.0.1 2007 
+Mar 12 14:00:44.449 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterB 0 1 udp-1fb881d5-b79f-4e4d-a321-1c2601b8a50f 
+Mar 12 14:00:44.451 HYPERVISOR: exec_cmd: vm get_status RouterB 
+Mar 12 14:00:46.533 HYPERVISOR: exec_cmd: nio create_udp udp-83d39a97-f62a-4338-b15e-75b097ef6e5b 2012 127.0.0.1 2013 
+Mar 12 14:00:46.535 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RouterB 0 0 udp-83d39a97-f62a-4338-b15e-75b097ef6e5b 
+Mar 12 14:00:46.536 HYPERVISOR: exec_cmd: vm get_status RouterB 
+Mar 12 14:00:50.647 HYPERVISOR: exec_cmd: vm set_ios RouterB C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Mar 12 14:00:51.354 HYPERVISOR: exec_cmd: vm set_ios RouterB C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Mar 12 14:00:51.855 HYPERVISOR: exec_cmd: vm set_ios RouterB C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 

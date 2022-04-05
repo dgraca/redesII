@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c3cb9b5f8a2cd7e8ed4b2d82b5f2fd784ac66790df336cfc1a2e366126ef176d
-size 558
+# Redes II
+
+## Repositório para armazenar documentos de uma forma centralizada
+
+### Documentos que podem ser encontrados neste repositório
+- Trabalhos práticos
+- Enunciados dos trabalhos práticos
+- Livros/Manuais ou outros recursos dados pelos professores
+- Projetos elaborados no GNS3 v2.2.15
+- Outros documentos que possam ser pertinentes
+
+### Grupo e respetivos elementos
+- Grupo 9
+- Daniel Graça, n.º 20948
+- Guilherme Lourenço, n.º23053
+
+### Instituição e ano letivo
+- Instituto Politécnico de Tomar
+- Ano Letivo 2021/2022

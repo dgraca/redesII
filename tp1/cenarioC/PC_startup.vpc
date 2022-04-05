@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fffbf5ba8d43d95447c65548a2f7be87e329d93ce3f9a0e19a74f0adf3d83ab1
-size 216
+# This the configuration for PC
+#
+# Uncomment the following line to enable DHCP
+# dhcp
+# or the line below to manually setup an IP address and subnet mask
+# ip 192.168.1.1 255.0.0.0
+#
+
+set pcname PC
