@@ -1,0 +1,47 @@
+Apr 26 22:48:11.120 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 26 22:48:11.122 HYPERVISOR: Started on IP = localhost, TCP port = 50954.
+Apr 26 22:48:11.606 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 26 22:48:11.606 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips 
+Apr 26 22:48:11.606 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips
+Apr 26 22:48:11.606 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips\b7f0214b-07be-417c-8e2c-ed96888597ac 
+Apr 26 22:48:11.607 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips\b7f0214b-07be-417c-8e2c-ed96888597ac
+Apr 26 22:48:11.607 HYPERVISOR: exec_cmd: vm create ESW2 2 c3600 
+Apr 26 22:48:11.609 VM: VM ESW2 created.
+Apr 26 22:48:11.609 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+Apr 26 22:48:11.609 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW2 
+Apr 26 22:48:11.610 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Apr 26 22:48:11.610 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Apr 26 22:48:11.611 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 26 22:48:11.611 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x605f2458 
+Apr 26 22:48:11.612 HYPERVISOR: exec_cmd: vm set_ios ESW2 C:/Users/danie/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Apr 26 22:48:11.612 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW2 cc02.17a8.0000 
+Apr 26 22:48:11.612 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Apr 26 22:48:11.613 HYPERVISOR: exec_cmd: vm set_ram ESW2 192 
+Apr 26 22:48:11.613 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 26 22:48:11.613 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+Apr 26 22:48:15.185 HYPERVISOR: exec_cmd: nio create_udp udp-f005ead9-0414-4ae1-a6a2-5f20810ad385 20016 127.0.0.1 20017 
+Apr 26 22:48:15.435 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 11 udp-f005ead9-0414-4ae1-a6a2-5f20810ad385 
+Apr 26 22:48:15.435 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 26 22:48:15.784 HYPERVISOR: exec_cmd: nio create_udp udp-47078019-2b48-479e-9012-05d144f4d405 20024 127.0.0.1 20025 
+Apr 26 22:48:15.787 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 15 udp-47078019-2b48-479e-9012-05d144f4d405 
+Apr 26 22:48:15.787 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 26 22:48:22.795 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 26 22:48:22.797 VM: VM Ghost created.
+Apr 26 22:48:22.797 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/danie/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Apr 26 22:48:22.798 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 26 22:48:22.798 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips\c3640-ik9o3s-mz.124-25b.image-192.ghost 
+Apr 26 22:48:22.799 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 26 22:48:22.799 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 22:48:22.800 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 26 22:48:22.800 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 26 22:48:23.203 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 26 22:48:23.205 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 26 22:48:23.273 VM: VM Ghost shutdown.
+Apr 26 22:48:23.274 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 26 22:48:23.276 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 26 22:48:23.276 VM: VM Ghost destroyed.
+Apr 26 22:48:23.287 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Apr 26 22:48:23.287 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp3\project-files\dynamips\c3640-ik9o3s-mz.124-25b.image-192.ghost 
+Apr 26 22:48:23.287 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Apr 26 22:48:23.288 HYPERVISOR: exec_cmd: vm set_config ESW2 configs\i2_startup-config.cfg 
+Apr 26 22:48:23.289 HYPERVISOR: exec_cmd: vm start ESW2 

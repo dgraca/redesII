@@ -1,0 +1,37 @@
+Apr 24 17:49:04.920 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 24 17:49:04.924 HYPERVISOR: Started on IP = localhost, TCP port = 50478.
+Apr 24 17:49:05.238 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 24 17:49:05.239 HYPERVISOR: exec_cmd: hypervisor working_dir D:\RDII - TL3\project-files\dynamips 
+Apr 24 17:49:05.278 GENERAL: working_dir=D:\RDII - TL3\project-files\dynamips
+Apr 24 17:49:05.280 HYPERVISOR: exec_cmd: hypervisor working_dir D:\RDII - TL3\project-files\dynamips\568c191a-41db-43e0-a9f4-e5ec46bf50d3 
+Apr 24 17:49:05.280 GENERAL: working_dir=D:\RDII - TL3\project-files\dynamips\568c191a-41db-43e0-a9f4-e5ec46bf50d3
+Apr 24 17:49:05.280 HYPERVISOR: exec_cmd: vm create ESW1 1 c3600 
+Apr 24 17:49:05.284 VM: VM ESW1 created.
+Apr 24 17:49:05.287 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+Apr 24 17:49:05.287 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW1 
+Apr 24 17:49:05.289 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Apr 24 17:49:05.290 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Apr 24 17:49:05.292 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 17:49:05.293 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x605f2458 
+Apr 24 17:49:05.297 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/Utilizador/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Apr 24 17:49:05.299 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW1 cc01.3124.0000 
+Apr 24 17:49:05.301 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Apr 24 17:49:05.304 HYPERVISOR: exec_cmd: vm set_ram ESW1 192 
+Apr 24 17:49:05.305 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 17:49:05.306 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Apr 24 17:49:11.045 HYPERVISOR: exec_cmd: nio create_udp udp-f8700243-4206-4030-8e1d-9b9b43913d11 10020 127.0.0.1 10021 
+Apr 24 17:49:11.328 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 15 udp-f8700243-4206-4030-8e1d-9b9b43913d11 
+Apr 24 17:49:11.330 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 17:49:12.177 HYPERVISOR: exec_cmd: nio create_udp udp-cb68dcf1-94bb-4f5e-86c9-e2194e536127 10032 127.0.0.1 10033 
+Apr 24 17:49:12.180 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 11 udp-cb68dcf1-94bb-4f5e-86c9-e2194e536127 
+Apr 24 17:49:12.180 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 17:57:29.376 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Apr 24 17:57:29.378 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 D:\RDII - TL3\project-files\dynamips\c3640-ik9o3s-mz.124-25b.image-192.ghost 
+Apr 24 17:57:29.379 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 17:57:29.386 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i1_startup-config.cfg 
+Apr 24 17:57:29.388 HYPERVISOR: exec_cmd: vm start ESW1 
+Apr 24 17:58:00.062 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Apr 24 18:47:56.662 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 24 18:47:56.666 HYPERVISOR: exec_cmd: vm stop ESW1 
+Apr 24 18:47:57.155 VM: VM ESW1 shutdown.
+Apr 24 18:47:57.194 HYPERVISOR: exec_cmd: vm extract_config ESW1 
