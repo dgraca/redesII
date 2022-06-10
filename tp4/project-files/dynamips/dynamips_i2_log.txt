@@ -1,0 +1,31 @@
+Jun 10 18:22:42.501 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 18:22:42.502 HYPERVISOR: Started on IP = localhost, TCP port = 52079.
+Jun 10 18:22:42.992 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:22:42.992 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips 
+Jun 10 18:22:42.992 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips
+Jun 10 18:22:42.992 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\f95f4857-8769-4f81-b6ec-debdf109dd09 
+Jun 10 18:22:42.993 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\f95f4857-8769-4f81-b6ec-debdf109dd09
+Jun 10 18:22:42.993 HYPERVISOR: exec_cmd: vm create R2 2 c2691 
+Jun 10 18:22:42.995 VM: VM R2 created.
+Jun 10 18:22:42.996 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Jun 10 18:22:42.996 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+Jun 10 18:22:42.996 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 10 18:22:42.997 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+Jun 10 18:22:42.997 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 10 18:22:42.997 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a48cb8 
+Jun 10 18:22:42.999 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jun 10 18:22:42.999 HYPERVISOR: exec_cmd: c2691 set_mac_addr R2 c002.201c.0000 
+Jun 10 18:22:43.000 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 10 18:22:43.001 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+Jun 10 18:22:43.001 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+Jun 10 18:22:46.030 HYPERVISOR: exec_cmd: nio create_udp udp-e721c487-66a7-43ef-902e-e5c7d82472b1 20016 127.0.0.1 20017 
+Jun 10 18:22:46.311 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-e721c487-66a7-43ef-902e-e5c7d82472b1 
+Jun 10 18:22:46.312 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 10 18:22:46.368 HYPERVISOR: exec_cmd: nio create_udp udp-4701fa32-4ddf-4c45-83a0-9e0c6870a1d5 20020 127.0.0.1 20021 
+Jun 10 18:22:46.370 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 16 udp-4701fa32-4ddf-4c45-83a0-9e0c6870a1d5 
+Jun 10 18:22:46.371 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 10 18:23:32.169 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Jun 10 18:23:32.169 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jun 10 18:23:32.171 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 10 18:23:32.172 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+Jun 10 18:23:32.172 HYPERVISOR: exec_cmd: vm start R2 

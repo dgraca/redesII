@@ -1,0 +1,31 @@
+Jun 10 18:22:44.198 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 18:22:44.200 HYPERVISOR: Started on IP = localhost, TCP port = 52088.
+Jun 10 18:22:44.681 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:22:44.681 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips 
+Jun 10 18:22:44.681 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips
+Jun 10 18:22:44.681 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\b9a4ebc8-670b-4a0f-86be-c46738f75f8b 
+Jun 10 18:22:44.682 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\b9a4ebc8-670b-4a0f-86be-c46738f75f8b
+Jun 10 18:22:44.682 HYPERVISOR: exec_cmd: vm create AS200 5 c2691 
+Jun 10 18:22:44.684 VM: VM AS200 created.
+Jun 10 18:22:44.684 HYPERVISOR: exec_cmd: vm set_con_tcp_port AS200 5004 
+Jun 10 18:22:44.685 HYPERVISOR: exec_cmd: c2691 get_mac_addr AS200 
+Jun 10 18:22:44.685 HYPERVISOR: exec_cmd: vm set_disk0 AS200 0 
+Jun 10 18:22:44.686 HYPERVISOR: exec_cmd: vm set_exec_area AS200 64 
+Jun 10 18:22:44.686 HYPERVISOR: exec_cmd: vm get_status AS200 
+Jun 10 18:22:44.686 HYPERVISOR: exec_cmd: vm set_idle_pc AS200 0x60a48cb8 
+Jun 10 18:22:44.688 HYPERVISOR: exec_cmd: vm set_ios AS200 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jun 10 18:22:44.688 HYPERVISOR: exec_cmd: c2691 set_mac_addr AS200 c005.2214.0000 
+Jun 10 18:22:44.688 HYPERVISOR: exec_cmd: vm set_nvram AS200 256 
+Jun 10 18:22:44.689 HYPERVISOR: exec_cmd: vm set_ram AS200 192 
+Jun 10 18:22:44.689 HYPERVISOR: exec_cmd: vm slot_add_binding AS200 0 16 WIC-1T 
+Jun 10 18:22:45.681 HYPERVISOR: exec_cmd: nio create_udp udp-e45973f2-3b10-405c-9844-8fc63f41e335 20010 127.0.0.1 20011 
+Jun 10 18:22:45.949 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS200 0 0 udp-e45973f2-3b10-405c-9844-8fc63f41e335 
+Jun 10 18:22:45.949 HYPERVISOR: exec_cmd: vm get_status AS200 
+Jun 10 18:22:46.382 HYPERVISOR: exec_cmd: nio create_udp udp-af3975ca-656a-4344-a8ad-2a20ee16721e 20022 127.0.0.1 20023 
+Jun 10 18:22:46.385 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS200 0 16 udp-af3975ca-656a-4344-a8ad-2a20ee16721e 
+Jun 10 18:22:46.386 HYPERVISOR: exec_cmd: vm get_status AS200 
+Jun 10 18:23:33.682 HYPERVISOR: exec_cmd: vm set_ghost_status AS200 2 
+Jun 10 18:23:33.683 HYPERVISOR: exec_cmd: vm set_ghost_file AS200 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jun 10 18:23:33.683 HYPERVISOR: exec_cmd: vm get_status AS200 
+Jun 10 18:23:33.684 HYPERVISOR: exec_cmd: vm set_config AS200 configs\i5_startup-config.cfg 
+Jun 10 18:23:33.684 HYPERVISOR: exec_cmd: vm start AS200 

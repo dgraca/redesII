@@ -1,0 +1,46 @@
+May 23 19:36:11.749 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 23 19:36:11.750 HYPERVISOR: Started on IP = localhost, TCP port = 56506.
+May 23 19:36:12.235 HYPERVISOR: exec_cmd: hypervisor version 
+May 23 19:36:12.235 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips 
+May 23 19:36:12.235 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips
+May 23 19:36:12.236 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips\f95f4857-8769-4f81-b6ec-debdf109dd09 
+May 23 19:36:12.236 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips\f95f4857-8769-4f81-b6ec-debdf109dd09
+May 23 19:36:12.236 HYPERVISOR: exec_cmd: vm create R2 2 c2691 
+May 23 19:36:12.238 VM: VM R2 created.
+May 23 19:36:12.239 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 23 19:36:12.239 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+May 23 19:36:12.240 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 23 19:36:12.240 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+May 23 19:36:12.240 HYPERVISOR: exec_cmd: vm get_status R2 
+May 23 19:36:12.241 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60a48cb8 
+May 23 19:36:12.242 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+May 23 19:36:12.242 HYPERVISOR: exec_cmd: c2691 set_mac_addr R2 c002.201c.0000 
+May 23 19:36:12.242 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 23 19:36:12.242 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+May 23 19:36:12.242 HYPERVISOR: exec_cmd: vm slot_add_binding R2 0 16 WIC-1T 
+May 23 19:36:15.033 HYPERVISOR: exec_cmd: nio create_udp udp-1b5f52aa-b4f9-4ee5-a7cb-e41c0f856e55 20016 127.0.0.1 20017 
+May 23 19:36:15.252 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-1b5f52aa-b4f9-4ee5-a7cb-e41c0f856e55 
+May 23 19:36:15.252 HYPERVISOR: exec_cmd: vm get_status R2 
+May 23 19:36:15.297 HYPERVISOR: exec_cmd: nio create_udp udp-ade497a6-babe-48c4-b89b-3b2bab3ba7ad 20020 127.0.0.1 20021 
+May 23 19:36:15.299 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 16 udp-ade497a6-babe-48c4-b89b-3b2bab3ba7ad 
+May 23 19:36:15.300 HYPERVISOR: exec_cmd: vm get_status R2 
+May 23 19:40:17.349 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 23 19:40:17.351 VM: VM Ghost created.
+May 23 19:40:17.352 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+May 23 19:40:17.352 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 23 19:40:17.352 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+May 23 19:40:17.353 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 23 19:40:17.353 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 23 19:40:17.370 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 23 19:40:17.371 HYPERVISOR: exec_cmd: vm start Ghost 
+May 23 19:40:17.855 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 23 19:40:17.857 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 23 19:40:18.065 VM: VM Ghost shutdown.
+May 23 19:40:18.066 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+May 23 19:40:18.067 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 23 19:40:18.068 VM: VM Ghost destroyed.
+May 23 19:40:18.076 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 23 19:40:18.076 HYPERVISOR: exec_cmd: vm set_ghost_file R2 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+May 23 19:40:18.077 HYPERVISOR: exec_cmd: vm get_status R2 
+May 23 19:40:18.078 HYPERVISOR: exec_cmd: vm set_config R2 configs\i2_startup-config.cfg 
+May 23 19:40:18.078 HYPERVISOR: exec_cmd: vm start R2 

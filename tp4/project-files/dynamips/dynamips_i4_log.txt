@@ -1,0 +1,46 @@
+Jun 10 18:22:43.633 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 10 18:22:43.634 HYPERVISOR: Started on IP = localhost, TCP port = 52085.
+Jun 10 18:22:44.123 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 10 18:22:44.124 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips 
+Jun 10 18:22:44.125 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips
+Jun 10 18:22:44.125 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\f7cfd324-3d00-4504-ba74-888e2c4b71ab 
+Jun 10 18:22:44.125 GENERAL: working_dir=C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\f7cfd324-3d00-4504-ba74-888e2c4b71ab
+Jun 10 18:22:44.125 HYPERVISOR: exec_cmd: vm create AS100 4 c2691 
+Jun 10 18:22:44.127 VM: VM AS100 created.
+Jun 10 18:22:44.127 HYPERVISOR: exec_cmd: vm set_con_tcp_port AS100 5003 
+Jun 10 18:22:44.127 HYPERVISOR: exec_cmd: c2691 get_mac_addr AS100 
+Jun 10 18:22:44.128 HYPERVISOR: exec_cmd: vm set_disk0 AS100 0 
+Jun 10 18:22:44.129 HYPERVISOR: exec_cmd: vm set_exec_area AS100 64 
+Jun 10 18:22:44.129 HYPERVISOR: exec_cmd: vm get_status AS100 
+Jun 10 18:22:44.129 HYPERVISOR: exec_cmd: vm set_idle_pc AS100 0x60a48cb8 
+Jun 10 18:22:44.131 HYPERVISOR: exec_cmd: vm set_ios AS100 C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jun 10 18:22:44.131 HYPERVISOR: exec_cmd: c2691 set_mac_addr AS100 c004.1d4c.0000 
+Jun 10 18:22:44.132 HYPERVISOR: exec_cmd: vm set_nvram AS100 256 
+Jun 10 18:22:44.132 HYPERVISOR: exec_cmd: vm set_ram AS100 192 
+Jun 10 18:22:44.132 HYPERVISOR: exec_cmd: vm slot_add_binding AS100 0 16 WIC-1T 
+Jun 10 18:22:45.402 HYPERVISOR: exec_cmd: nio create_udp udp-a8194bc6-9be9-4e5c-9598-b0e7169ae7f5 20008 127.0.0.1 20009 
+Jun 10 18:22:45.667 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS100 0 0 udp-a8194bc6-9be9-4e5c-9598-b0e7169ae7f5 
+Jun 10 18:22:45.668 HYPERVISOR: exec_cmd: vm get_status AS100 
+Jun 10 18:22:46.483 HYPERVISOR: exec_cmd: nio create_udp udp-5e728055-cc86-4ed2-b14c-9f2e8fcbab87 20028 127.0.0.1 20029 
+Jun 10 18:22:46.486 HYPERVISOR: exec_cmd: vm slot_add_nio_binding AS100 0 16 udp-5e728055-cc86-4ed2-b14c-9f2e8fcbab87 
+Jun 10 18:22:46.486 HYPERVISOR: exec_cmd: vm get_status AS100 
+Jun 10 18:23:26.386 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+Jun 10 18:23:26.388 VM: VM Ghost created.
+Jun 10 18:23:26.389 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/danie/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25d.image 
+Jun 10 18:23:26.390 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 10 18:23:26.390 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jun 10 18:23:26.391 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Jun 10 18:23:26.391 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 10 18:23:26.410 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 10 18:23:26.410 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 10 18:23:26.856 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 10 18:23:26.857 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 10 18:23:27.061 VM: VM Ghost shutdown.
+Jun 10 18:23:27.062 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 10 18:23:27.064 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 10 18:23:27.064 VM: VM Ghost destroyed.
+Jun 10 18:23:27.084 HYPERVISOR: exec_cmd: vm set_ghost_status AS100 2 
+Jun 10 18:23:27.085 HYPERVISOR: exec_cmd: vm set_ghost_file AS100 C:\Users\danie\OneDrive\Ambiente de Trabalho\Daniel\2ano_2semestre\RedesII\Praticas\tp4\project-files\dynamips\c2691-adventerprisek9-mz.124-25d.image-192.ghost 
+Jun 10 18:23:27.085 HYPERVISOR: exec_cmd: vm get_status AS100 
+Jun 10 18:23:27.086 HYPERVISOR: exec_cmd: vm set_config AS100 configs\i4_startup-config.cfg 
+Jun 10 18:23:27.086 HYPERVISOR: exec_cmd: vm start AS100 
